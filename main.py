@@ -67,9 +67,9 @@ from numpy import arange, sin, pi
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
 from matplotlib.figure import Figure
 from matplotlib import rcParams
-rcParams.update( {
-'font.name' : 'Verdana'
-})
+# rcParams.update( {
+# 'font.name' : 'Verdana'
+# })
 
 
 
@@ -483,7 +483,7 @@ class App:
         survive=0
         self.get_entries()
         
-        self.dirname = tkFileDialog.askdirectory(parent=root,message='Please select a results directory')
+        self.dirname = tkFileDialog.askdirectory(parent=root,title='Please select a results directory')
     
         if self.dirname:
                    #print self.modelselect 
@@ -920,7 +920,7 @@ class App:
         survive=0
         self.get_entries()
         
-        self.dirname = tkFileDialog.askdirectory(parent=root,message='Please select a results directory')
+        self.dirname = tkFileDialog.askdirectory(parent=root,title='Please select a results directory')
     
         if self.dirname:
             ########create filename
